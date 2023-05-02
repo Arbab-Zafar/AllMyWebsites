@@ -13,6 +13,7 @@
             font-family: 'Montserrat', sans-serif;
             margin: 0px;
             padding: 0px;
+            display: none;
         }
 
         .copyButton {
@@ -63,9 +64,9 @@
     </style>
 </head>
 
-<body>
+<body id="body">
     <nav>
-        <a href="AllMyWebsitesForFuture.html" style="color: white;text-decoration: none;">All My Websites</a>
+        <a href="index.html" style="color: white;text-decoration: none;">All My Websites</a>
         <a href="Code.html"  style="color:white;text-decoration: underline;">Codes</a>
         <a href="futureIdeas.html"  style="color:white;text-decoration: none;">Future Ideas</a>
         <input type="search" placeholder="Search...">
@@ -8089,6 +8090,12 @@
     </div><br><br>
     <hr>
     <script>
+        let pass = 31;
+        let b = parseInt(prompt("First enter the password:"));
+        let body = document.querySelector("#body")
+        if(b==pass){
+            body.style.display = "block";
+        }
         let fileName = document.querySelectorAll(".fileName");
         let displayCode = document.querySelectorAll(".displayCode");
         let copyButton = document.querySelectorAll(".copyButton");
